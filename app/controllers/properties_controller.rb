@@ -71,7 +71,7 @@ class PropertiesController < ApplicationController
     end
 
     def set_sidebar
-      @show = true
+      @show_sidebar = true
     end
 
     # Only allow a list of trusted parameters through.
