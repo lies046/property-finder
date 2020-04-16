@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_16_023754) do
+ActiveRecord::Schema.define(version: 2020_04_16_043451) do
 
   create_table "accounts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "first_name", default: "", null: false
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 2020_04_16_023754) do
     t.integer "parking_spaces", default: 0
     t.text "details"
     t.boolean "for_sale", default: true
+    t.datetime "available_date"
     t.index ["account_id"], name: "index_properties_on_account_id"
   end
 

@@ -65,3 +65,4 @@ gem 'carrierwave'
 gem "jquery-rails"
 gem 'font-awesome-sass'
 gem 'toastr-rails'
+gem 'dotenv-rails'
