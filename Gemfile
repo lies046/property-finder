@@ -64,3 +64,4 @@ gem 'devise'
 gem 'carrierwave'
 gem "jquery-rails"
 gem 'font-awesome-sass'
+gem 'toastr-rails'
