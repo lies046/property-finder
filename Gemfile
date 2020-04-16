@@ -66,3 +66,4 @@ gem "jquery-rails"
 gem 'font-awesome-sass'
 gem 'toastr-rails'
 gem 'dotenv-rails'
+gem 'pry-rails'

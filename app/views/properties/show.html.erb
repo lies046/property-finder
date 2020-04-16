@@ -57,7 +57,9 @@
         </div>
 
         <button class="btn btn-outline-info mt-3" id="toggleDetails">Show more</button>
-        <p class="mt-5">*We are continuing to closely monitor the ongoing COVID-19 situation, with the health and well-being of our customers and staff as a top priority. </p>
+        <% if @property.for_sale %>
+          <p class="mt-5">*We are continuing to closely monitor the ongoing COVID-19 situation, with the health and well-being of our customers and staff as a top priority. </p>
+        <% end %>
       </div>
     </div>
   </div>
