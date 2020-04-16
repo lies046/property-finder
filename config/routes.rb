@@ -4,6 +4,6 @@ Rails.application.routes.draw do
    
   get "/dashboard" => 'dashboard#index', as: :dashboard
   get "profile/:id" => "dashboard#profile", as: :profile
- 
+  post "agent/message" => "properties#email_agent", as: :email_agent
   root 'public#main'
 end
