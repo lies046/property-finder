@@ -4,6 +4,7 @@ class PublicController < ApplicationController
       path = current_account.admin? ? accounts_path : dashboard_path
       redirect_to dashboard_path, flash: { success: "Successfuly signed in. Welcome to Property Finder"} and return
     end
-    @properties = Property.all
+    @properties = Property.latest
+    @posts = Post.latest
   end
 end
